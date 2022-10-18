@@ -97,7 +97,7 @@ export class App extends Component {
           {images.length !== 0 && (
             <ImageGallery images={images} onClick={this.onGalleryClickHandle} />
           )}
-          {totalPages > pageNumber && (
+          {pageNumber > 0 && totalPages > pageNumber && (
             <Button onClick={this.onLoadMoreHandle}>Load more</Button>
           )}
 
